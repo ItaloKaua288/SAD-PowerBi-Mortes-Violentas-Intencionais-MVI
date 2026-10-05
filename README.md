@@ -257,7 +257,7 @@ A partir de dados históricos, o objetivo é estruturar informações de seguran
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Ítalo Kauã e Gilson Brenner**.
+Desenvolvido por **Ítalo Kauã**.
 
 Sinta-se à vontade para enviar sugestões, relatar problemas ou contribuir com melhorias para o projeto.
 
