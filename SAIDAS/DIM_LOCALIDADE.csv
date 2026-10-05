@@ -1,0 +1,187 @@
+MUNICIPIO;REGIAO_GEOGRAFICA;ID_LOCALIDADE
+ABREU E LIMA            ;REGIÃO METROPOLITANA;1
+AFOGADOS DA INGAZEIRA   ;SERTÃO              ;2
+AFRANIO                 ;SERTÃO              ;3
+AGRESTINA               ;AGRESTE             ;4
+AGUA PRETA              ;ZONA DA MATA        ;5
+AGUAS BELAS             ;AGRESTE             ;6
+ALAGOINHA               ;AGRESTE             ;7
+ALIANCA                 ;ZONA DA MATA        ;8
+ALTINHO                 ;AGRESTE             ;9
+AMARAJI                 ;ZONA DA MATA        ;10
+ANGELIM                 ;AGRESTE             ;11
+ARACOIABA               ;REGIÃO METROPOLITANA;12
+ARARIPINA               ;SERTÃO              ;13
+ARCOVERDE               ;SERTÃO              ;14
+BARRA DE GUABIRABA      ;AGRESTE             ;15
+BARREIROS               ;ZONA DA MATA        ;16
+BELEM DE MARIA          ;ZONA DA MATA        ;17
+BELEM DE SAO FRANCISCO  ;SERTÃO              ;18
+BELO JARDIM             ;AGRESTE             ;19
+BETANIA                 ;SERTÃO              ;20
+BEZERROS                ;AGRESTE             ;21
+BODOCO                  ;SERTÃO              ;22
+BOM CONSELHO            ;AGRESTE             ;23
+BOM JARDIM              ;AGRESTE             ;24
+BONITO                  ;AGRESTE             ;25
+BREJAO                  ;AGRESTE             ;26
+BREJINHO                ;SERTÃO              ;27
+BREJO DA MADRE DE DEUS  ;AGRESTE             ;28
+BUENOS AIRES            ;ZONA DA MATA        ;29
+BUIQUE                  ;AGRESTE             ;30
+CABO DE SANTO AGOSTINHO ;REGIÃO METROPOLITANA;31
+CABROBO                 ;SERTÃO              ;32
+CACHOEIRINHA            ;AGRESTE             ;33
+CAETES                  ;AGRESTE             ;34
+CALCADO                 ;AGRESTE             ;35
+CALUMBI                 ;SERTÃO              ;36
+CAMARAGIBE              ;REGIÃO METROPOLITANA;37
+CAMOCIM DE SAO FELIX    ;AGRESTE             ;38
+CAMUTANGA               ;ZONA DA MATA        ;39
+CANHOTINHO              ;AGRESTE             ;40
+CAPOEIRAS               ;AGRESTE             ;41
+CARNAIBA                ;SERTÃO              ;42
+CARNAUBEIRA DA PENHA    ;SERTÃO              ;43
+CARPINA                 ;ZONA DA MATA        ;44
+CARUARU                 ;AGRESTE             ;45
+CASINHAS                ;AGRESTE             ;46
+CATENDE                 ;ZONA DA MATA        ;47
+CEDRO                   ;SERTÃO              ;48
+CHA DE ALEGRIA          ;ZONA DA MATA        ;49
+CHA GRANDE              ;ZONA DA MATA        ;50
+CONDADO                 ;ZONA DA MATA        ;51
+CORRENTES               ;AGRESTE             ;52
+CORTES                  ;ZONA DA MATA        ;53
+CUMARU                  ;AGRESTE             ;54
+CUPIRA                  ;AGRESTE             ;55
+CUSTODIA                ;SERTÃO              ;56
+DORMENTES               ;SERTÃO              ;57
+ESCADA                  ;ZONA DA MATA        ;58
+EXU                     ;SERTÃO              ;59
+FEIRA NOVA              ;AGRESTE             ;60
+FERNANDO DE NORONHA     ;REGIÃO METROPOLITANA;61
+FERREIROS               ;ZONA DA MATA        ;62
+FLORES                  ;SERTÃO              ;63
+FLORESTA                ;SERTÃO              ;64
+FREI MIGUELINHO         ;AGRESTE             ;65
+GAMELEIRA               ;ZONA DA MATA        ;66
+GARANHUNS               ;AGRESTE             ;67
+GLORIA DO GOITA         ;ZONA DA MATA        ;68
+GOIANA                  ;ZONA DA MATA        ;69
+GRANITO                 ;SERTÃO              ;70
+GRAVATA                 ;AGRESTE             ;71
+IATI                    ;AGRESTE             ;72
+IBIMIRIM                ;SERTÃO              ;73
+IBIRAJUBA               ;AGRESTE             ;74
+IGARASSU                ;REGIÃO METROPOLITANA;75
+IGUARACI                ;SERTÃO              ;76
+INAJA                   ;SERTÃO              ;77
+INGAZEIRA               ;SERTÃO              ;78
+IPOJUCA                 ;REGIÃO METROPOLITANA;79
+IPUBI                   ;SERTÃO              ;80
+ITACURUBA               ;SERTÃO              ;81
+ITAIBA                  ;AGRESTE             ;82
+ITAMARACA               ;REGIÃO METROPOLITANA;83
+ITAMBE                  ;ZONA DA MATA        ;84
+ITAPETIM                ;SERTÃO              ;85
+ITAPISSUMA              ;REGIÃO METROPOLITANA;86
+ITAQUITINGA             ;ZONA DA MATA        ;87
+JABOATAO DOS GUARARAPES ;REGIÃO METROPOLITANA;88
+JAQUEIRA                ;ZONA DA MATA        ;89
+JATAUBA                 ;AGRESTE             ;90
+JATOBA                  ;SERTÃO              ;91
+JOAO ALFREDO            ;AGRESTE             ;92
+JOAQUIM NABUCO          ;ZONA DA MATA        ;93
+JUCATI                  ;AGRESTE             ;94
+JUPI                    ;AGRESTE             ;95
+JUREMA                  ;AGRESTE             ;96
+LAGOA DO CARRO          ;ZONA DA MATA        ;97
+LAGOA DO ITAENGA        ;ZONA DA MATA        ;98
+LAGOA DO OURO           ;AGRESTE             ;99
+LAGOA DOS GATOS         ;AGRESTE             ;100
+LAGOA GRANDE            ;SERTÃO              ;101
+LAJEDO                  ;AGRESTE             ;102
+LIMOEIRO                ;AGRESTE             ;103
+MACAPARANA              ;ZONA DA MATA        ;104
+MACHADOS                ;AGRESTE             ;105
+MANARI                  ;SERTÃO              ;106
+MARAIAL                 ;ZONA DA MATA        ;107
+MIRANDIBA               ;SERTÃO              ;108
+MOREILANDIA             ;SERTÃO              ;109
+MORENO                  ;REGIÃO METROPOLITANA;110
+NAO INFORMADO           ;NÃO INFORMADA       ;111
+NAZARE DA MATA          ;ZONA DA MATA        ;112
+OLINDA                  ;REGIÃO METROPOLITANA;113
+OROBO                   ;AGRESTE             ;114
+OROCO                   ;SERTÃO              ;115
+OURICURI                ;SERTÃO              ;116
+PALMARES                ;ZONA DA MATA        ;117
+PALMEIRINA              ;AGRESTE             ;118
+PANELAS                 ;AGRESTE             ;119
+PARANATAMA              ;AGRESTE             ;120
+PARNAMIRIM              ;SERTÃO              ;121
+PASSIRA                 ;AGRESTE             ;122
+PAUDALHO                ;ZONA DA MATA        ;123
+PAULISTA                ;REGIÃO METROPOLITANA;124
+PEDRA                   ;AGRESTE             ;125
+PESQUEIRA               ;AGRESTE             ;126
+PETROLANDIA             ;SERTÃO              ;127
+PETROLINA               ;SERTÃO              ;128
+POCAO                   ;AGRESTE             ;129
+POMBOS                  ;ZONA DA MATA        ;130
+PRIMAVERA               ;ZONA DA MATA        ;131
+QUIPAPA                 ;ZONA DA MATA        ;132
+QUIXABA                 ;SERTÃO              ;133
+RECIFE                  ;CAPITAL             ;134
+RIACHO DAS ALMAS        ;AGRESTE             ;135
+RIBEIRAO                ;ZONA DA MATA        ;136
+RIO FORMOSO             ;ZONA DA MATA        ;137
+SAIRE                   ;AGRESTE             ;138
+SALGADINHO              ;AGRESTE             ;139
+SALGUEIRO               ;SERTÃO              ;140
+SALOA                   ;AGRESTE             ;141
+SANHARO                 ;AGRESTE             ;142
+SANTA CRUZ              ;SERTÃO              ;143
+SANTA CRUZ DA BAIXA VERD;SERTÃO              ;144
+SANTA CRUZ DO CAPIBARIBE;AGRESTE             ;145
+SANTA FILOMENA          ;SERTÃO              ;146
+SANTA MARIA DA BOA VISTA;SERTÃO              ;147
+SANTA MARIA DO CAMBUCA  ;AGRESTE             ;148
+SANTA TEREZINHA         ;SERTÃO              ;149
+SAO BENEDITO DO SUL     ;ZONA DA MATA        ;150
+SAO BENTO DO UNA        ;AGRESTE             ;151
+SAO CAETANO             ;AGRESTE             ;152
+SAO JOAO                ;AGRESTE             ;153
+SAO JOAQUIM DO MONTE    ;AGRESTE             ;154
+SAO JOSE DA COROA GRANDE;ZONA DA MATA        ;155
+SAO JOSE DO BELMONTE    ;SERTÃO              ;156
+SAO JOSE DO EGITO       ;SERTÃO              ;157
+SAO LOURENCO DA MATA    ;REGIÃO METROPOLITANA;158
+SAO VICENTE FERRER      ;AGRESTE             ;159
+SERRA TALHADA           ;SERTÃO              ;160
+SERRITA                 ;SERTÃO              ;161
+SERTANIA                ;SERTÃO              ;162
+SIRINHAEM               ;ZONA DA MATA        ;163
+SOLIDAO                 ;SERTÃO              ;164
+SURUBIM                 ;AGRESTE             ;165
+TABIRA                  ;SERTÃO              ;166
+TACAIMBO                ;AGRESTE             ;167
+TACARATU                ;SERTÃO              ;168
+TAMANDARE               ;ZONA DA MATA        ;169
+TAQUARITINGA DO NORTE   ;AGRESTE             ;170
+TEREZINHA               ;AGRESTE             ;171
+TERRA NOVA              ;SERTÃO              ;172
+TIMBAUBA                ;ZONA DA MATA        ;173
+TORITAMA                ;AGRESTE             ;174
+TRACUNHAEM              ;ZONA DA MATA        ;175
+TRINDADE                ;SERTÃO              ;176
+TRIUNFO                 ;SERTÃO              ;177
+TUPANATINGA             ;AGRESTE             ;178
+TUPARETAMA              ;SERTÃO              ;179
+VENTUROSA               ;AGRESTE             ;180
+VERDEJANTE              ;SERTÃO              ;181
+VERTENTE DO LERIO       ;AGRESTE             ;182
+VERTENTES               ;AGRESTE             ;183
+VICENCIA                ;ZONA DA MATA        ;184
+VITORIA DE SANTO ANTAO  ;ZONA DA MATA        ;185
+XEXEU                   ;ZONA DA MATA        ;186
