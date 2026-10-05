@@ -10,6 +10,7 @@ O objetivo principal é transformar dados brutos da segurança pública em conhe
 
 ```text
 .
+├── Dataset/                    # Ficheiro de Dataset
 ├── Pentaho/                    # Ficheiro de ETL (.ktr) do Pentaho Data Integration
 │   └── *.ktr
 │
