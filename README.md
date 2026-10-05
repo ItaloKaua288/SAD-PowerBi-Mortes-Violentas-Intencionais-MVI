@@ -31,7 +31,7 @@ O objetivo principal é transformar dados brutos da segurança pública em conhe
 
 | Tecnologia / Ferramenta                     | Utilização                                                            |
 | ------------------------------------------- | --------------------------------------------------------------------- |
-| **Pentaho Data Integration (PDI / Kettle)** | Extração, tratamento, limpeza e modelagem dos dados brutos            |
+| **Pentaho Data Integration** | Extração, tratamento, limpeza e modelagem dos dados brutos            |
 | **Power BI**                                | Modelação dimensional, cálculos DAX e criação do dashboard interativo |
 | **DAX & M**                                 | Modelação e enriquecimento dos dados no Power BI                      |
 | **Git & GitHub**                            | Controlo de versão e documentação do projeto                          |
