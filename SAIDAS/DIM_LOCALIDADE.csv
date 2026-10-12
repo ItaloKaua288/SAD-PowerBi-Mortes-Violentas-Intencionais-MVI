@@ -1,187 +1,187 @@
-MUNICIPIO;REGIAO_GEOGRAFICA;ID_LOCALIDADE
-ABREU E LIMA            ;REGIÃO METROPOLITANA;1
-AFOGADOS DA INGAZEIRA   ;SERTÃO              ;2
-AFRANIO                 ;SERTÃO              ;3
-AGRESTINA               ;AGRESTE             ;4
-AGUA PRETA              ;ZONA DA MATA        ;5
-AGUAS BELAS             ;AGRESTE             ;6
-ALAGOINHA               ;AGRESTE             ;7
-ALIANCA                 ;ZONA DA MATA        ;8
-ALTINHO                 ;AGRESTE             ;9
-AMARAJI                 ;ZONA DA MATA        ;10
-ANGELIM                 ;AGRESTE             ;11
-ARACOIABA               ;REGIÃO METROPOLITANA;12
-ARARIPINA               ;SERTÃO              ;13
-ARCOVERDE               ;SERTÃO              ;14
-BARRA DE GUABIRABA      ;AGRESTE             ;15
-BARREIROS               ;ZONA DA MATA        ;16
-BELEM DE MARIA          ;ZONA DA MATA        ;17
-BELEM DE SAO FRANCISCO  ;SERTÃO              ;18
-BELO JARDIM             ;AGRESTE             ;19
-BETANIA                 ;SERTÃO              ;20
-BEZERROS                ;AGRESTE             ;21
-BODOCO                  ;SERTÃO              ;22
-BOM CONSELHO            ;AGRESTE             ;23
-BOM JARDIM              ;AGRESTE             ;24
-BONITO                  ;AGRESTE             ;25
-BREJAO                  ;AGRESTE             ;26
-BREJINHO                ;SERTÃO              ;27
-BREJO DA MADRE DE DEUS  ;AGRESTE             ;28
-BUENOS AIRES            ;ZONA DA MATA        ;29
-BUIQUE                  ;AGRESTE             ;30
-CABO DE SANTO AGOSTINHO ;REGIÃO METROPOLITANA;31
-CABROBO                 ;SERTÃO              ;32
-CACHOEIRINHA            ;AGRESTE             ;33
-CAETES                  ;AGRESTE             ;34
-CALCADO                 ;AGRESTE             ;35
-CALUMBI                 ;SERTÃO              ;36
-CAMARAGIBE              ;REGIÃO METROPOLITANA;37
-CAMOCIM DE SAO FELIX    ;AGRESTE             ;38
-CAMUTANGA               ;ZONA DA MATA        ;39
-CANHOTINHO              ;AGRESTE             ;40
-CAPOEIRAS               ;AGRESTE             ;41
-CARNAIBA                ;SERTÃO              ;42
-CARNAUBEIRA DA PENHA    ;SERTÃO              ;43
-CARPINA                 ;ZONA DA MATA        ;44
-CARUARU                 ;AGRESTE             ;45
-CASINHAS                ;AGRESTE             ;46
-CATENDE                 ;ZONA DA MATA        ;47
-CEDRO                   ;SERTÃO              ;48
-CHA DE ALEGRIA          ;ZONA DA MATA        ;49
-CHA GRANDE              ;ZONA DA MATA        ;50
-CONDADO                 ;ZONA DA MATA        ;51
-CORRENTES               ;AGRESTE             ;52
-CORTES                  ;ZONA DA MATA        ;53
-CUMARU                  ;AGRESTE             ;54
-CUPIRA                  ;AGRESTE             ;55
-CUSTODIA                ;SERTÃO              ;56
-DORMENTES               ;SERTÃO              ;57
-ESCADA                  ;ZONA DA MATA        ;58
-EXU                     ;SERTÃO              ;59
-FEIRA NOVA              ;AGRESTE             ;60
-FERNANDO DE NORONHA     ;REGIÃO METROPOLITANA;61
-FERREIROS               ;ZONA DA MATA        ;62
-FLORES                  ;SERTÃO              ;63
-FLORESTA                ;SERTÃO              ;64
-FREI MIGUELINHO         ;AGRESTE             ;65
-GAMELEIRA               ;ZONA DA MATA        ;66
-GARANHUNS               ;AGRESTE             ;67
-GLORIA DO GOITA         ;ZONA DA MATA        ;68
-GOIANA                  ;ZONA DA MATA        ;69
-GRANITO                 ;SERTÃO              ;70
-GRAVATA                 ;AGRESTE             ;71
-IATI                    ;AGRESTE             ;72
-IBIMIRIM                ;SERTÃO              ;73
-IBIRAJUBA               ;AGRESTE             ;74
-IGARASSU                ;REGIÃO METROPOLITANA;75
-IGUARACI                ;SERTÃO              ;76
-INAJA                   ;SERTÃO              ;77
-INGAZEIRA               ;SERTÃO              ;78
-IPOJUCA                 ;REGIÃO METROPOLITANA;79
-IPUBI                   ;SERTÃO              ;80
-ITACURUBA               ;SERTÃO              ;81
-ITAIBA                  ;AGRESTE             ;82
-ITAMARACA               ;REGIÃO METROPOLITANA;83
-ITAMBE                  ;ZONA DA MATA        ;84
-ITAPETIM                ;SERTÃO              ;85
-ITAPISSUMA              ;REGIÃO METROPOLITANA;86
-ITAQUITINGA             ;ZONA DA MATA        ;87
-JABOATAO DOS GUARARAPES ;REGIÃO METROPOLITANA;88
-JAQUEIRA                ;ZONA DA MATA        ;89
-JATAUBA                 ;AGRESTE             ;90
-JATOBA                  ;SERTÃO              ;91
-JOAO ALFREDO            ;AGRESTE             ;92
-JOAQUIM NABUCO          ;ZONA DA MATA        ;93
-JUCATI                  ;AGRESTE             ;94
-JUPI                    ;AGRESTE             ;95
-JUREMA                  ;AGRESTE             ;96
-LAGOA DO CARRO          ;ZONA DA MATA        ;97
-LAGOA DO ITAENGA        ;ZONA DA MATA        ;98
-LAGOA DO OURO           ;AGRESTE             ;99
-LAGOA DOS GATOS         ;AGRESTE             ;100
-LAGOA GRANDE            ;SERTÃO              ;101
-LAJEDO                  ;AGRESTE             ;102
-LIMOEIRO                ;AGRESTE             ;103
-MACAPARANA              ;ZONA DA MATA        ;104
-MACHADOS                ;AGRESTE             ;105
-MANARI                  ;SERTÃO              ;106
-MARAIAL                 ;ZONA DA MATA        ;107
-MIRANDIBA               ;SERTÃO              ;108
-MOREILANDIA             ;SERTÃO              ;109
-MORENO                  ;REGIÃO METROPOLITANA;110
-NAO INFORMADO           ;NÃO INFORMADA       ;111
-NAZARE DA MATA          ;ZONA DA MATA        ;112
-OLINDA                  ;REGIÃO METROPOLITANA;113
-OROBO                   ;AGRESTE             ;114
-OROCO                   ;SERTÃO              ;115
-OURICURI                ;SERTÃO              ;116
-PALMARES                ;ZONA DA MATA        ;117
-PALMEIRINA              ;AGRESTE             ;118
-PANELAS                 ;AGRESTE             ;119
-PARANATAMA              ;AGRESTE             ;120
-PARNAMIRIM              ;SERTÃO              ;121
-PASSIRA                 ;AGRESTE             ;122
-PAUDALHO                ;ZONA DA MATA        ;123
-PAULISTA                ;REGIÃO METROPOLITANA;124
-PEDRA                   ;AGRESTE             ;125
-PESQUEIRA               ;AGRESTE             ;126
-PETROLANDIA             ;SERTÃO              ;127
-PETROLINA               ;SERTÃO              ;128
-POCAO                   ;AGRESTE             ;129
-POMBOS                  ;ZONA DA MATA        ;130
-PRIMAVERA               ;ZONA DA MATA        ;131
-QUIPAPA                 ;ZONA DA MATA        ;132
-QUIXABA                 ;SERTÃO              ;133
-RECIFE                  ;CAPITAL             ;134
-RIACHO DAS ALMAS        ;AGRESTE             ;135
-RIBEIRAO                ;ZONA DA MATA        ;136
-RIO FORMOSO             ;ZONA DA MATA        ;137
-SAIRE                   ;AGRESTE             ;138
-SALGADINHO              ;AGRESTE             ;139
-SALGUEIRO               ;SERTÃO              ;140
-SALOA                   ;AGRESTE             ;141
-SANHARO                 ;AGRESTE             ;142
-SANTA CRUZ              ;SERTÃO              ;143
-SANTA CRUZ DA BAIXA VERD;SERTÃO              ;144
-SANTA CRUZ DO CAPIBARIBE;AGRESTE             ;145
-SANTA FILOMENA          ;SERTÃO              ;146
-SANTA MARIA DA BOA VISTA;SERTÃO              ;147
-SANTA MARIA DO CAMBUCA  ;AGRESTE             ;148
-SANTA TEREZINHA         ;SERTÃO              ;149
-SAO BENEDITO DO SUL     ;ZONA DA MATA        ;150
-SAO BENTO DO UNA        ;AGRESTE             ;151
-SAO CAETANO             ;AGRESTE             ;152
-SAO JOAO                ;AGRESTE             ;153
-SAO JOAQUIM DO MONTE    ;AGRESTE             ;154
-SAO JOSE DA COROA GRANDE;ZONA DA MATA        ;155
-SAO JOSE DO BELMONTE    ;SERTÃO              ;156
-SAO JOSE DO EGITO       ;SERTÃO              ;157
-SAO LOURENCO DA MATA    ;REGIÃO METROPOLITANA;158
-SAO VICENTE FERRER      ;AGRESTE             ;159
-SERRA TALHADA           ;SERTÃO              ;160
-SERRITA                 ;SERTÃO              ;161
-SERTANIA                ;SERTÃO              ;162
-SIRINHAEM               ;ZONA DA MATA        ;163
-SOLIDAO                 ;SERTÃO              ;164
-SURUBIM                 ;AGRESTE             ;165
-TABIRA                  ;SERTÃO              ;166
-TACAIMBO                ;AGRESTE             ;167
-TACARATU                ;SERTÃO              ;168
-TAMANDARE               ;ZONA DA MATA        ;169
-TAQUARITINGA DO NORTE   ;AGRESTE             ;170
-TEREZINHA               ;AGRESTE             ;171
-TERRA NOVA              ;SERTÃO              ;172
-TIMBAUBA                ;ZONA DA MATA        ;173
-TORITAMA                ;AGRESTE             ;174
-TRACUNHAEM              ;ZONA DA MATA        ;175
-TRINDADE                ;SERTÃO              ;176
-TRIUNFO                 ;SERTÃO              ;177
-TUPANATINGA             ;AGRESTE             ;178
-TUPARETAMA              ;SERTÃO              ;179
-VENTUROSA               ;AGRESTE             ;180
-VERDEJANTE              ;SERTÃO              ;181
-VERTENTE DO LERIO       ;AGRESTE             ;182
-VERTENTES               ;AGRESTE             ;183
-VICENCIA                ;ZONA DA MATA        ;184
-VITORIA DE SANTO ANTAO  ;ZONA DA MATA        ;185
-XEXEU                   ;ZONA DA MATA        ;186
+MUNICIPIO;REGIAO_GEOGRAFICA;LOCALIDADE_COMPLETA;ID_LOCALIDADE
+ABREU E LIMA            ;REGIÃO METROPOLITANA;ABREU E LIMA, PE, BRASIL;1
+AFOGADOS DA INGAZEIRA   ;SERTÃO              ;AFOGADOS DA INGAZEIRA, PE, BRASIL;2
+AFRANIO                 ;SERTÃO              ;AFRANIO, PE, BRASIL;3
+AGRESTINA               ;AGRESTE             ;AGRESTINA, PE, BRASIL;4
+AGUA PRETA              ;ZONA DA MATA        ;AGUA PRETA, PE, BRASIL;5
+AGUAS BELAS             ;AGRESTE             ;AGUAS BELAS, PE, BRASIL;6
+ALAGOINHA               ;AGRESTE             ;ALAGOINHA, PE, BRASIL;7
+ALIANCA                 ;ZONA DA MATA        ;ALIANCA, PE, BRASIL;8
+ALTINHO                 ;AGRESTE             ;ALTINHO, PE, BRASIL;9
+AMARAJI                 ;ZONA DA MATA        ;AMARAJI, PE, BRASIL;10
+ANGELIM                 ;AGRESTE             ;ANGELIM, PE, BRASIL;11
+ARACOIABA               ;REGIÃO METROPOLITANA;ARACOIABA, PE, BRASIL;12
+ARARIPINA               ;SERTÃO              ;ARARIPINA, PE, BRASIL;13
+ARCOVERDE               ;SERTÃO              ;ARCOVERDE, PE, BRASIL;14
+BARRA DE GUABIRABA      ;AGRESTE             ;BARRA DE GUABIRABA, PE, BRASIL;15
+BARREIROS               ;ZONA DA MATA        ;BARREIROS, PE, BRASIL;16
+BELEM DE MARIA          ;ZONA DA MATA        ;BELEM DE MARIA, PE, BRASIL;17
+BELEM DE SAO FRANCISCO  ;SERTÃO              ;BELEM DE SAO FRANCISCO, PE, BRASIL;18
+BELO JARDIM             ;AGRESTE             ;BELO JARDIM, PE, BRASIL;19
+BETANIA                 ;SERTÃO              ;BETANIA, PE, BRASIL;20
+BEZERROS                ;AGRESTE             ;BEZERROS, PE, BRASIL;21
+BODOCO                  ;SERTÃO              ;BODOCO, PE, BRASIL;22
+BOM CONSELHO            ;AGRESTE             ;BOM CONSELHO, PE, BRASIL;23
+BOM JARDIM              ;AGRESTE             ;BOM JARDIM, PE, BRASIL;24
+BONITO                  ;AGRESTE             ;BONITO, PE, BRASIL;25
+BREJAO                  ;AGRESTE             ;BREJAO, PE, BRASIL;26
+BREJINHO                ;SERTÃO              ;BREJINHO, PE, BRASIL;27
+BREJO DA MADRE DE DEUS  ;AGRESTE             ;BREJO DA MADRE DE DEUS, PE, BRASIL;28
+BUENOS AIRES            ;ZONA DA MATA        ;BUENOS AIRES, PE, BRASIL;29
+BUIQUE                  ;AGRESTE             ;BUIQUE, PE, BRASIL;30
+CABO DE SANTO AGOSTINHO ;REGIÃO METROPOLITANA;CABO DE SANTO AGOSTINHO, PE, BRASIL;31
+CABROBO                 ;SERTÃO              ;CABROBO, PE, BRASIL;32
+CACHOEIRINHA            ;AGRESTE             ;CACHOEIRINHA, PE, BRASIL;33
+CAETES                  ;AGRESTE             ;CAETES, PE, BRASIL;34
+CALCADO                 ;AGRESTE             ;CALCADO, PE, BRASIL;35
+CALUMBI                 ;SERTÃO              ;CALUMBI, PE, BRASIL;36
+CAMARAGIBE              ;REGIÃO METROPOLITANA;CAMARAGIBE, PE, BRASIL;37
+CAMOCIM DE SAO FELIX    ;AGRESTE             ;CAMOCIM DE SAO FELIX, PE, BRASIL;38
+CAMUTANGA               ;ZONA DA MATA        ;CAMUTANGA, PE, BRASIL;39
+CANHOTINHO              ;AGRESTE             ;CANHOTINHO, PE, BRASIL;40
+CAPOEIRAS               ;AGRESTE             ;CAPOEIRAS, PE, BRASIL;41
+CARNAIBA                ;SERTÃO              ;CARNAIBA, PE, BRASIL;42
+CARNAUBEIRA DA PENHA    ;SERTÃO              ;CARNAUBEIRA DA PENHA, PE, BRASIL;43
+CARPINA                 ;ZONA DA MATA        ;CARPINA, PE, BRASIL;44
+CARUARU                 ;AGRESTE             ;CARUARU, PE, BRASIL;45
+CASINHAS                ;AGRESTE             ;CASINHAS, PE, BRASIL;46
+CATENDE                 ;ZONA DA MATA        ;CATENDE, PE, BRASIL;47
+CEDRO                   ;SERTÃO              ;CEDRO, PE, BRASIL;48
+CHA DE ALEGRIA          ;ZONA DA MATA        ;CHA DE ALEGRIA, PE, BRASIL;49
+CHA GRANDE              ;ZONA DA MATA        ;CHA GRANDE, PE, BRASIL;50
+CONDADO                 ;ZONA DA MATA        ;CONDADO, PE, BRASIL;51
+CORRENTES               ;AGRESTE             ;CORRENTES, PE, BRASIL;52
+CORTES                  ;ZONA DA MATA        ;CORTES, PE, BRASIL;53
+CUMARU                  ;AGRESTE             ;CUMARU, PE, BRASIL;54
+CUPIRA                  ;AGRESTE             ;CUPIRA, PE, BRASIL;55
+CUSTODIA                ;SERTÃO              ;CUSTODIA, PE, BRASIL;56
+DORMENTES               ;SERTÃO              ;DORMENTES, PE, BRASIL;57
+ESCADA                  ;ZONA DA MATA        ;ESCADA, PE, BRASIL;58
+EXU                     ;SERTÃO              ;EXU, PE, BRASIL;59
+FEIRA NOVA              ;AGRESTE             ;FEIRA NOVA, PE, BRASIL;60
+FERNANDO DE NORONHA     ;REGIÃO METROPOLITANA;FERNANDO DE NORONHA, PE, BRASIL;61
+FERREIROS               ;ZONA DA MATA        ;FERREIROS, PE, BRASIL;62
+FLORES                  ;SERTÃO              ;FLORES, PE, BRASIL;63
+FLORESTA                ;SERTÃO              ;FLORESTA, PE, BRASIL;64
+FREI MIGUELINHO         ;AGRESTE             ;FREI MIGUELINHO, PE, BRASIL;65
+GAMELEIRA               ;ZONA DA MATA        ;GAMELEIRA, PE, BRASIL;66
+GARANHUNS               ;AGRESTE             ;GARANHUNS, PE, BRASIL;67
+GLORIA DO GOITA         ;ZONA DA MATA        ;GLORIA DO GOITA, PE, BRASIL;68
+GOIANA                  ;ZONA DA MATA        ;GOIANA, PE, BRASIL;69
+GRANITO                 ;SERTÃO              ;GRANITO, PE, BRASIL;70
+GRAVATA                 ;AGRESTE             ;GRAVATA, PE, BRASIL;71
+IATI                    ;AGRESTE             ;IATI, PE, BRASIL;72
+IBIMIRIM                ;SERTÃO              ;IBIMIRIM, PE, BRASIL;73
+IBIRAJUBA               ;AGRESTE             ;IBIRAJUBA, PE, BRASIL;74
+IGARASSU                ;REGIÃO METROPOLITANA;IGARASSU, PE, BRASIL;75
+IGUARACI                ;SERTÃO              ;IGUARACI, PE, BRASIL;76
+INAJA                   ;SERTÃO              ;INAJA, PE, BRASIL;77
+INGAZEIRA               ;SERTÃO              ;INGAZEIRA, PE, BRASIL;78
+IPOJUCA                 ;REGIÃO METROPOLITANA;IPOJUCA, PE, BRASIL;79
+IPUBI                   ;SERTÃO              ;IPUBI, PE, BRASIL;80
+ITACURUBA               ;SERTÃO              ;ITACURUBA, PE, BRASIL;81
+ITAIBA                  ;AGRESTE             ;ITAIBA, PE, BRASIL;82
+ITAMARACA               ;REGIÃO METROPOLITANA;ITAMARACA, PE, BRASIL;83
+ITAMBE                  ;ZONA DA MATA        ;ITAMBE, PE, BRASIL;84
+ITAPETIM                ;SERTÃO              ;ITAPETIM, PE, BRASIL;85
+ITAPISSUMA              ;REGIÃO METROPOLITANA;ITAPISSUMA, PE, BRASIL;86
+ITAQUITINGA             ;ZONA DA MATA        ;ITAQUITINGA, PE, BRASIL;87
+JABOATAO DOS GUARARAPES ;REGIÃO METROPOLITANA;JABOATAO DOS GUARARAPES, PE, BRASIL;88
+JAQUEIRA                ;ZONA DA MATA        ;JAQUEIRA, PE, BRASIL;89
+JATAUBA                 ;AGRESTE             ;JATAUBA, PE, BRASIL;90
+JATOBA                  ;SERTÃO              ;JATOBA, PE, BRASIL;91
+JOAO ALFREDO            ;AGRESTE             ;JOAO ALFREDO, PE, BRASIL;92
+JOAQUIM NABUCO          ;ZONA DA MATA        ;JOAQUIM NABUCO, PE, BRASIL;93
+JUCATI                  ;AGRESTE             ;JUCATI, PE, BRASIL;94
+JUPI                    ;AGRESTE             ;JUPI, PE, BRASIL;95
+JUREMA                  ;AGRESTE             ;JUREMA, PE, BRASIL;96
+LAGOA DO CARRO          ;ZONA DA MATA        ;LAGOA DO CARRO, PE, BRASIL;97
+LAGOA DO ITAENGA        ;ZONA DA MATA        ;LAGOA DO ITAENGA, PE, BRASIL;98
+LAGOA DO OURO           ;AGRESTE             ;LAGOA DO OURO, PE, BRASIL;99
+LAGOA DOS GATOS         ;AGRESTE             ;LAGOA DOS GATOS, PE, BRASIL;100
+LAGOA GRANDE            ;SERTÃO              ;LAGOA GRANDE, PE, BRASIL;101
+LAJEDO                  ;AGRESTE             ;LAJEDO, PE, BRASIL;102
+LIMOEIRO                ;AGRESTE             ;LIMOEIRO, PE, BRASIL;103
+MACAPARANA              ;ZONA DA MATA        ;MACAPARANA, PE, BRASIL;104
+MACHADOS                ;AGRESTE             ;MACHADOS, PE, BRASIL;105
+MANARI                  ;SERTÃO              ;MANARI, PE, BRASIL;106
+MARAIAL                 ;ZONA DA MATA        ;MARAIAL, PE, BRASIL;107
+MIRANDIBA               ;SERTÃO              ;MIRANDIBA, PE, BRASIL;108
+MOREILANDIA             ;SERTÃO              ;MOREILANDIA, PE, BRASIL;109
+MORENO                  ;REGIÃO METROPOLITANA;MORENO, PE, BRASIL;110
+NAO INFORMADO           ;NÃO INFORMADA       ;NAO INFORMADO, PE, BRASIL;111
+NAZARE DA MATA          ;ZONA DA MATA        ;NAZARE DA MATA, PE, BRASIL;112
+OLINDA                  ;REGIÃO METROPOLITANA;OLINDA, PE, BRASIL;113
+OROBO                   ;AGRESTE             ;OROBO, PE, BRASIL;114
+OROCO                   ;SERTÃO              ;OROCO, PE, BRASIL;115
+OURICURI                ;SERTÃO              ;OURICURI, PE, BRASIL;116
+PALMARES                ;ZONA DA MATA        ;PALMARES, PE, BRASIL;117
+PALMEIRINA              ;AGRESTE             ;PALMEIRINA, PE, BRASIL;118
+PANELAS                 ;AGRESTE             ;PANELAS, PE, BRASIL;119
+PARANATAMA              ;AGRESTE             ;PARANATAMA, PE, BRASIL;120
+PARNAMIRIM              ;SERTÃO              ;PARNAMIRIM, PE, BRASIL;121
+PASSIRA                 ;AGRESTE             ;PASSIRA, PE, BRASIL;122
+PAUDALHO                ;ZONA DA MATA        ;PAUDALHO, PE, BRASIL;123
+PAULISTA                ;REGIÃO METROPOLITANA;PAULISTA, PE, BRASIL;124
+PEDRA                   ;AGRESTE             ;PEDRA, PE, BRASIL;125
+PESQUEIRA               ;AGRESTE             ;PESQUEIRA, PE, BRASIL;126
+PETROLANDIA             ;SERTÃO              ;PETROLANDIA, PE, BRASIL;127
+PETROLINA               ;SERTÃO              ;PETROLINA, PE, BRASIL;128
+POCAO                   ;AGRESTE             ;POCAO, PE, BRASIL;129
+POMBOS                  ;ZONA DA MATA        ;POMBOS, PE, BRASIL;130
+PRIMAVERA               ;ZONA DA MATA        ;PRIMAVERA, PE, BRASIL;131
+QUIPAPA                 ;ZONA DA MATA        ;QUIPAPA, PE, BRASIL;132
+QUIXABA                 ;SERTÃO              ;QUIXABA, PE, BRASIL;133
+RECIFE                  ;CAPITAL             ;RECIFE, PE, BRASIL;134
+RIACHO DAS ALMAS        ;AGRESTE             ;RIACHO DAS ALMAS, PE, BRASIL;135
+RIBEIRAO                ;ZONA DA MATA        ;RIBEIRAO, PE, BRASIL;136
+RIO FORMOSO             ;ZONA DA MATA        ;RIO FORMOSO, PE, BRASIL;137
+SAIRE                   ;AGRESTE             ;SAIRE, PE, BRASIL;138
+SALGADINHO              ;AGRESTE             ;SALGADINHO, PE, BRASIL;139
+SALGUEIRO               ;SERTÃO              ;SALGUEIRO, PE, BRASIL;140
+SALOA                   ;AGRESTE             ;SALOA, PE, BRASIL;141
+SANHARO                 ;AGRESTE             ;SANHARO, PE, BRASIL;142
+SANTA CRUZ              ;SERTÃO              ;SANTA CRUZ, PE, BRASIL;143
+SANTA CRUZ DA BAIXA VERD;SERTÃO              ;SANTA CRUZ DA BAIXA VERDE, PE, BRASIL;144
+SANTA CRUZ DO CAPIBARIBE;AGRESTE             ;SANTA CRUZ DO CAPIBARIBE, PE, BRASIL;145
+SANTA FILOMENA          ;SERTÃO              ;SANTA FILOMENA, PE, BRASIL;146
+SANTA MARIA DA BOA VISTA;SERTÃO              ;SANTA MARIA DA BOA VISTA, PE, BRASIL;147
+SANTA MARIA DO CAMBUCA  ;AGRESTE             ;SANTA MARIA DO CAMBUCA, PE, BRASIL;148
+SANTA TEREZINHA         ;SERTÃO              ;SANTA TEREZINHA, PE, BRASIL;149
+SAO BENEDITO DO SUL     ;ZONA DA MATA        ;SAO BENEDITO DO SUL, PE, BRASIL;150
+SAO BENTO DO UNA        ;AGRESTE             ;SAO BENTO DO UNA, PE, BRASIL;151
+SAO CAETANO             ;AGRESTE             ;SAO CAETANO, PE, BRASIL;152
+SAO JOAO                ;AGRESTE             ;SAO JOAO, PE, BRASIL;153
+SAO JOAQUIM DO MONTE    ;AGRESTE             ;SAO JOAQUIM DO MONTE, PE, BRASIL;154
+SAO JOSE DA COROA GRANDE;ZONA DA MATA        ;SAO JOSE DA COROA GRANDE, PE, BRASIL;155
+SAO JOSE DO BELMONTE    ;SERTÃO              ;SAO JOSE DO BELMONTE, PE, BRASIL;156
+SAO JOSE DO EGITO       ;SERTÃO              ;SAO JOSE DO EGITO, PE, BRASIL;157
+SAO LOURENCO DA MATA    ;REGIÃO METROPOLITANA;SAO LOURENCO DA MATA, PE, BRASIL;158
+SAO VICENTE FERRER      ;AGRESTE             ;SAO VICENTE FERRER, PE, BRASIL;159
+SERRA TALHADA           ;SERTÃO              ;SERRA TALHADA, PE, BRASIL;160
+SERRITA                 ;SERTÃO              ;SERRITA, PE, BRASIL;161
+SERTANIA                ;SERTÃO              ;SERTANIA, PE, BRASIL;162
+SIRINHAEM               ;ZONA DA MATA        ;SIRINHAEM, PE, BRASIL;163
+SOLIDAO                 ;SERTÃO              ;SOLIDAO, PE, BRASIL;164
+SURUBIM                 ;AGRESTE             ;SURUBIM, PE, BRASIL;165
+TABIRA                  ;SERTÃO              ;TABIRA, PE, BRASIL;166
+TACAIMBO                ;AGRESTE             ;TACAIMBO, PE, BRASIL;167
+TACARATU                ;SERTÃO              ;TACARATU, PE, BRASIL;168
+TAMANDARE               ;ZONA DA MATA        ;TAMANDARE, PE, BRASIL;169
+TAQUARITINGA DO NORTE   ;AGRESTE             ;TAQUARITINGA DO NORTE, PE, BRASIL;170
+TEREZINHA               ;AGRESTE             ;TEREZINHA, PE, BRASIL;171
+TERRA NOVA              ;SERTÃO              ;TERRA NOVA, PE, BRASIL;172
+TIMBAUBA                ;ZONA DA MATA        ;TIMBAUBA, PE, BRASIL;173
+TORITAMA                ;AGRESTE             ;TORITAMA, PE, BRASIL;174
+TRACUNHAEM              ;ZONA DA MATA        ;TRACUNHAEM, PE, BRASIL;175
+TRINDADE                ;SERTÃO              ;TRINDADE, PE, BRASIL;176
+TRIUNFO                 ;SERTÃO              ;TRIUNFO, PE, BRASIL;177
+TUPANATINGA             ;AGRESTE             ;TUPANATINGA, PE, BRASIL;178
+TUPARETAMA              ;SERTÃO              ;TUPARETAMA, PE, BRASIL;179
+VENTUROSA               ;AGRESTE             ;VENTUROSA, PE, BRASIL;180
+VERDEJANTE              ;SERTÃO              ;VERDEJANTE, PE, BRASIL;181
+VERTENTE DO LERIO       ;AGRESTE             ;VERTENTE DO LERIO, PE, BRASIL;182
+VERTENTES               ;AGRESTE             ;VERTENTES, PE, BRASIL;183
+VICENCIA                ;ZONA DA MATA        ;VICENCIA, PE, BRASIL;184
+VITORIA DE SANTO ANTAO  ;ZONA DA MATA        ;VITORIA DE SANTO ANTAO, PE, BRASIL;185
+XEXEU                   ;ZONA DA MATA        ;XEXEU, PE, BRASIL;186
