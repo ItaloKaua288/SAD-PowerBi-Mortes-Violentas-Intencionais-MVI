@@ -540,7 +540,79 @@
       <bordercolorblue>100</bordercolorblue>
       <drawshadow>Y</drawshadow>
     </notepad>
+    <notepad>
+      <note>NÃO INFORMADA</note>
+      <xloc>330</xloc>
+      <yloc>238</yloc>
+      <width>108</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
   </notepads>
+  <connection>
+    <name>MVI-SDS</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>MVI-SDS</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4fa4bff208cc2ff89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
   <order>
     <hop>
       <from>Add sequence</from>
@@ -605,16 +677,6 @@
     <hop>
       <from>Sort rows 3</from>
       <to>Unique rows 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Number range</from>
-      <to>Add sequence 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Add sequence 3</from>
-      <to>Text file output 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -742,6 +804,51 @@
       <to>Modified JavaScript value</to>
       <enabled>Y</enabled>
     </hop>
+    <hop>
+      <from>Text file output</from>
+      <to>Table output</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Text file output 4</from>
+      <to>Table output 3</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Text file output 5</from>
+      <to>Table output 4</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Text file output 3</from>
+      <to>Table output 5</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Text file output 2</from>
+      <to>Table output 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Number range</from>
+      <to>Select values 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 2</from>
+      <to>Add sequence 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 3</from>
+      <to>Value mapper 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Value mapper 3</from>
+      <to>Text file output 3</to>
+      <enabled>Y</enabled>
+    </hop>
   </order>
   <step>
     <name>Add sequence</name>
@@ -843,7 +950,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
+      <xloc>1200</xloc>
       <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
@@ -878,7 +985,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
+      <xloc>976</xloc>
       <yloc>416</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1045,7 +1152,7 @@
       <field_a>DATA</field_a>
       <field_b/>
       <field_c/>
-      <value_type>String</value_type>
+      <value_type>Integer</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
       <remove>N</remove>
@@ -1060,7 +1167,7 @@
       <field_a>DATA</field_a>
       <field_b/>
       <field_c/>
-      <value_type>String</value_type>
+      <value_type>Integer</value_type>
       <value_length>-1</value_length>
       <value_precision>-1</value_precision>
       <remove>N</remove>
@@ -1279,7 +1386,7 @@
       <meta>
         <name>ID_VITIMA</name>
         <rename>ID_VITIMA</rename>
-        <type>None</type>
+        <type>Integer</type>
         <length>-2</length>
         <precision>0</precision>
         <conversion_mask/>
@@ -1296,7 +1403,7 @@
       <meta>
         <name>ID_LOCALIDADE</name>
         <rename>ID_LOCALIDADE</rename>
-        <type>None</type>
+        <type>Integer</type>
         <length>-2</length>
         <precision>0</precision>
         <conversion_mask/>
@@ -1313,7 +1420,7 @@
       <meta>
         <name>ID_TEMPO</name>
         <rename>ID_TEMPO</rename>
-        <type>None</type>
+        <type>Integer</type>
         <length>-2</length>
         <precision>0</precision>
         <conversion_mask/>
@@ -1330,7 +1437,7 @@
       <meta>
         <name>ID_OCORRENCIA</name>
         <rename>ID_OCORRENCIA</rename>
-        <type>None</type>
+        <type>Integer</type>
         <length>-2</length>
         <precision>-2</precision>
         <conversion_mask/>
@@ -1347,8 +1454,8 @@
       <meta>
         <name>TOTAL_VITIMAS</name>
         <rename>TOTAL_VITIMAS</rename>
-        <type>None</type>
-        <length>15</length>
+        <type>Integer</type>
+        <length>-2</length>
         <precision>0</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1592,7 +1699,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       <rule>
         <lower_bound>-1.7976931348623157E308</lower_bound>
         <upper_bound>0.0</upper_bound>
-        <value>IDADE DESCONHECIDA</value>
+        <value>DESCONHECIDA</value>
       </rule>
     </rules>
     <attributes/>
@@ -1650,7 +1757,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
         <name>MUNICIPIO</name>
         <rename>MUNICIPIO</rename>
         <type>String</type>
-        <length>24</length>
+        <length>-2</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1735,7 +1842,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
         <name>IDADE</name>
         <rename>IDADE</rename>
         <type>Integer</type>
-        <length>15</length>
+        <length>-2</length>
         <precision>0</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -1794,6 +1901,60 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     <GUI>
       <xloc>560</xloc>
       <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>SEXO</name>
+      </field>
+      <field>
+        <name>IDADE</name>
+      </field>
+      <field>
+        <name>FAIXA_ETARIA</name>
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>IDADE</name>
+        <rename>IDADE</rename>
+        <type>String</type>
+        <length>-2</length>
+        <precision>0</precision>
+        <conversion_mask/>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1088</xloc>
+      <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2130,7 +2291,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
         <name>ID_TEMPO</name>
         <rename>ID_TEMPO</rename>
         <default/>
-        <type>None</type>
+        <type>Integer</type>
       </value>
     </lookup>
     <attributes/>
@@ -2176,7 +2337,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
         <name>ID_VITIMA</name>
         <rename>ID_VITIMA</rename>
         <default/>
-        <type>None</type>
+        <type>Integer</type>
       </value>
     </lookup>
     <attributes/>
@@ -2218,7 +2379,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
         <name>ID_OCORRENCIA</name>
         <rename>ID_OCORRENCIA</rename>
         <default/>
-        <type>None</type>
+        <type>Integer</type>
       </value>
     </lookup>
     <attributes/>
@@ -2311,6 +2472,314 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     <GUI>
       <xloc>160</xloc>
       <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>MVI-SDS</connection>
+    <schema>public</schema>
+    <table>dim_localidade</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>municipio</column_name>
+        <stream_name>MUNICIPIO</stream_name>
+      </field>
+      <field>
+        <column_name>regiao_geografica</column_name>
+        <stream_name>REGIAO_GEOGRAFICA</stream_name>
+      </field>
+      <field>
+        <column_name>localidade_completa</column_name>
+        <stream_name>LOCALIDADE_COMPLETA</stream_name>
+      </field>
+      <field>
+        <column_name>id_localidade</column_name>
+        <stream_name>ID_LOCALIDADE</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1312</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output 2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>MVI-SDS</connection>
+    <schema>public</schema>
+    <table>dim_tempo</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>data</column_name>
+        <stream_name>DATA</stream_name>
+      </field>
+      <field>
+        <column_name>ano</column_name>
+        <stream_name>ANO</stream_name>
+      </field>
+      <field>
+        <column_name>dia_mes</column_name>
+        <stream_name>DIA_MES</stream_name>
+      </field>
+      <field>
+        <column_name>mes</column_name>
+        <stream_name>MES</stream_name>
+      </field>
+      <field>
+        <column_name>dia_semana</column_name>
+        <stream_name>DIA_SEMANA</stream_name>
+      </field>
+      <field>
+        <column_name>trimestre</column_name>
+        <stream_name>TRIMESTRE</stream_name>
+      </field>
+      <field>
+        <column_name>id_tempo</column_name>
+        <stream_name>ID_TEMPO</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1312</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output 3</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>MVI-SDS</connection>
+    <schema>public</schema>
+    <table>fato</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>id_localidade</column_name>
+        <stream_name>ID_LOCALIDADE</stream_name>
+      </field>
+      <field>
+        <column_name>id_tempo</column_name>
+        <stream_name>ID_TEMPO</stream_name>
+      </field>
+      <field>
+        <column_name>id_ocorrencia</column_name>
+        <stream_name>ID_OCORRENCIA</stream_name>
+      </field>
+      <field>
+        <column_name>id_vitima</column_name>
+        <stream_name>ID_VITIMA</stream_name>
+      </field>
+      <field>
+        <column_name>total_vitimas</column_name>
+        <stream_name>TOTAL_VITIMAS</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1488</xloc>
+      <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output 4</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>MVI-SDS</connection>
+    <schema>public</schema>
+    <table>dim_ocorrencia</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>natureza_juridica</column_name>
+        <stream_name>NATUREZA_JURIDICA</stream_name>
+      </field>
+      <field>
+        <column_name>id_ocorrencia</column_name>
+        <stream_name>ID_OCORRENCIA</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1200</xloc>
+      <yloc>416</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output 5</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>MVI-SDS</connection>
+    <schema>public</schema>
+    <table>dim_vitima</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>sexo</column_name>
+        <stream_name>SEXO</stream_name>
+      </field>
+      <field>
+        <column_name>idade</column_name>
+        <stream_name>IDADE</stream_name>
+      </field>
+      <field>
+        <column_name>faixa_etaria</column_name>
+        <stream_name>FAIXA_ETARIA</stream_name>
+      </field>
+      <field>
+        <column_name>id_vitima</column_name>
+        <stream_name>ID_VITIMA</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1536</xloc>
+      <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2480,7 +2949,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1200</xloc>
+      <xloc>1424</xloc>
       <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2594,7 +3063,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1200</xloc>
+      <xloc>1088</xloc>
       <yloc>416</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2812,6 +3281,40 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     <GUI>
       <xloc>464</xloc>
       <yloc>304</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Value mapper 3</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>IDADE</field_to_use>
+    <target_field/>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>-1</source_value>
+        <target_value>NÃO INFORMADO</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1312</xloc>
+      <yloc>528</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
