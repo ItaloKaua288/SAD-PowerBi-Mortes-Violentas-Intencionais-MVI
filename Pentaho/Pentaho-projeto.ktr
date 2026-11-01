@@ -437,7 +437,7 @@
   <notepads>
     <notepad>
       <note>DIM_LOCALIDADE</note>
-      <xloc>880</xloc>
+      <xloc>784</xloc>
       <yloc>16</yloc>
       <width>122</width>
       <heigth>28</heigth>
@@ -458,8 +458,8 @@
     </notepad>
     <notepad>
       <note>DIM_TEMPO</note>
-      <xloc>880</xloc>
-      <yloc>128</yloc>
+      <xloc>1040</xloc>
+      <yloc>160</yloc>
       <width>86</width>
       <heigth>28</heigth>
       <fontname>Segoe UI</fontname>
@@ -479,8 +479,8 @@
     </notepad>
     <notepad>
       <note>DIM_FATO</note>
-      <xloc>880</xloc>
-      <yloc>256</yloc>
+      <xloc>832</xloc>
+      <yloc>288</yloc>
       <width>73</width>
       <heigth>28</heigth>
       <fontname>Segoe UI</fontname>
@@ -500,8 +500,8 @@
     </notepad>
     <notepad>
       <note>DIM_OCORRENCIA</note>
-      <xloc>864</xloc>
-      <yloc>368</yloc>
+      <xloc>592</xloc>
+      <yloc>400</yloc>
       <width>124</width>
       <heigth>28</heigth>
       <fontname>Segoe UI</fontname>
@@ -521,34 +521,13 @@
     </notepad>
     <notepad>
       <note>DIM_VITIMA</note>
-      <xloc>880</xloc>
-      <yloc>480</yloc>
+      <xloc>576</xloc>
+      <yloc>496</yloc>
       <width>88</width>
       <heigth>28</heigth>
       <fontname>Segoe UI</fontname>
       <fontsize>10</fontsize>
       <fontbold>Y</fontbold>
-      <fontitalic>N</fontitalic>
-      <fontcolorred>0</fontcolorred>
-      <fontcolorgreen>0</fontcolorgreen>
-      <fontcolorblue>0</fontcolorblue>
-      <backgroundcolorred>255</backgroundcolorred>
-      <backgroundcolorgreen>205</backgroundcolorgreen>
-      <backgroundcolorblue>112</backgroundcolorblue>
-      <bordercolorred>100</bordercolorred>
-      <bordercolorgreen>100</bordercolorgreen>
-      <bordercolorblue>100</bordercolorblue>
-      <drawshadow>Y</drawshadow>
-    </notepad>
-    <notepad>
-      <note>NÃO INFORMADA</note>
-      <xloc>330</xloc>
-      <yloc>238</yloc>
-      <width>108</width>
-      <heigth>26</heigth>
-      <fontname>Segoe UI</fontname>
-      <fontsize>9</fontsize>
-      <fontbold>N</fontbold>
       <fontitalic>N</fontitalic>
       <fontcolorred>0</fontcolorred>
       <fontcolorgreen>0</fontcolorgreen>
@@ -617,7 +596,7 @@
     <hop>
       <from>Add sequence</from>
       <to>Text file output</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>CSV file input</from>
@@ -646,17 +625,7 @@
     </hop>
     <hop>
       <from>Select values</from>
-      <to>Dim_Tempo</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Select values</from>
       <to>Dim_Localidade</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Unique rows 2</from>
-      <to>Calculator</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -680,21 +649,6 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Dim_Tempo</from>
-      <to>Sort rows 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Sort rows 2</from>
-      <to>Unique rows 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Calculator</from>
-      <to>Add sequence 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Dim_Localidade</from>
       <to>Sort rows</to>
       <enabled>Y</enabled>
@@ -715,23 +669,18 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
+      <from>Calculator</from>
+      <to>Add sequence 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
       <from>Add sequence 3</from>
       <to>Stream lookup 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Add sequence 2</from>
-      <to>Stream lookup 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Stream lookup</from>
       <to>Stream lookup 2</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Add sequence 2</from>
-      <to>Text file output 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -755,6 +704,11 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
+      <from>Add sequence 2</from>
+      <to>Stream lookup 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
       <from>Sort rows 5</from>
       <to>Unique rows 4</to>
       <enabled>Y</enabled>
@@ -767,7 +721,7 @@
     <hop>
       <from>Add sequence 5</from>
       <to>Text file output 5</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Stream lookup 3</from>
@@ -792,7 +746,7 @@
     <hop>
       <from>Group by</from>
       <to>Text file output 4</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
     </hop>
     <hop>
       <from>Modified JavaScript value</from>
@@ -825,11 +779,6 @@
       <enabled>N</enabled>
     </hop>
     <hop>
-      <from>Text file output 2</from>
-      <to>Table output 2</to>
-      <enabled>N</enabled>
-    </hop>
-    <hop>
       <from>Number range</from>
       <to>Select values 2</to>
       <enabled>Y</enabled>
@@ -847,6 +796,61 @@
     <hop>
       <from>Value mapper 3</from>
       <to>Text file output 3</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>Dim_Tempo 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Dim_Tempo 2</from>
+      <to>Sort rows 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Generate rows</from>
+      <to>Add sequence 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Text file output 2</from>
+      <to>Table output 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 4</from>
+      <to>Calculator 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calculator 2</from>
+      <to>Merge join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 2 2</from>
+      <to>Unique rows 5</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Unique rows 5</from>
+      <to>Merge join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Add sequence 2</from>
+      <to>Text file output 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Merge join</from>
+      <to>Select values 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values 3</from>
+      <to>Calculator</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -880,7 +884,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
+      <xloc>976</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -915,8 +919,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
-      <yloc>176</yloc>
+      <xloc>1232</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -950,8 +954,43 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1200</xloc>
-      <yloc>528</yloc>
+      <xloc>1088</xloc>
+      <yloc>544</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Add sequence 4</name>
+    <type>Sequence</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <valuename>dias_a_somar</valuename>
+    <use_database>N</use_database>
+    <connection>MVI-SDS</connection>
+    <schema/>
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name/>
+    <start_at>0</start_at>
+    <increment_by>1</increment_by>
+    <max_value>999999999</max_value>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -985,8 +1024,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>976</xloc>
-      <yloc>416</yloc>
+      <xloc>1008</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1001,7 +1040,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\gamer\OneDrive\Documentos\UAST\SAD\Dataset\MICRODADOS_DE_MVI_JAN_2004_A_JULHO_2026.csv</filename>
+    <filename>C:\Users\gamer\OneDrive\Documentos\UAST\SAD\DATA MART\Dataset\MICRODADOS_DE_MVI_JAN_2004_A_JULHO_2026.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -1200,8 +1239,49 @@
       </output>
     </remotesteps>
     <GUI>
+      <xloc>1136</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculator 2</name>
+    <type>Calculator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <failIfNoFile>Y</failIfNoFile>
+    <calculation>
+      <field_name>data_completa</field_name>
+      <calc_type>ADD_DAYS</calc_type>
+      <field_a>data_inicial</field_a>
+      <field_b>dias_a_somar</field_b>
+      <field_c/>
+      <value_type>None</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask>dd/mm/yyyy</conversion_mask>
+      <decimal_symbol/>
+      <grouping_symbol/>
+      <currency_symbol/>
+    </calculation>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
       <xloc>976</xloc>
-      <yloc>176</yloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1234,7 +1314,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>672</xloc>
+      <xloc>560</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1282,13 +1362,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>672</xloc>
-      <yloc>416</yloc>
+      <xloc>704</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Dim_Tempo</name>
+    <name>Dim_Tempo 2</name>
     <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
@@ -1302,9 +1382,6 @@
       <field>
         <name>DATA</name>
       </field>
-      <field>
-        <name>ANO</name>
-      </field>
       <select_unspecified>N</select_unspecified>
     </fields>
     <attributes/>
@@ -1317,7 +1394,7 @@
     </remotesteps>
     <GUI>
       <xloc>672</xloc>
-      <yloc>176</yloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1350,8 +1427,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>672</xloc>
-      <yloc>528</yloc>
+      <xloc>560</xloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1479,7 +1556,51 @@
     </remotesteps>
     <GUI>
       <xloc>1088</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Generate rows</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>data_inicial</name>
+        <type>Date</type>
+        <format>dd/MM/yyyy</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>01/01/2004</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <limit>8260</limit>
+    <never_ending>N</never_ending>
+    <interval_in_ms>5000</interval_in_ms>
+    <row_time_field>now</row_time_field>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>768</xloc>
+      <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1534,7 +1655,7 @@
     </remotesteps>
     <GUI>
       <xloc>1296</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1621,6 +1742,40 @@
     </GUI>
   </step>
   <step>
+    <name>Merge join</name>
+    <type>MergeJoin</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <join_type>LEFT OUTER</join_type>
+    <step1>Calculator 2</step1>
+    <step2>Unique rows 5</step2>
+    <keys_1>
+      <key>data_completa</key>
+    </keys_1>
+    <keys_2>
+      <key>DATA</key>
+    </keys_2>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Modified JavaScript value</name>
     <type>ScriptValueMod</type>
     <description/>
@@ -1661,7 +1816,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>976</xloc>
+      <xloc>864</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1711,8 +1866,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>976</xloc>
-      <yloc>528</yloc>
+      <xloc>864</xloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1953,8 +2108,40 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
-      <yloc>528</yloc>
+      <xloc>976</xloc>
+      <yloc>544</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values 3</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>data_completa</name>
+        <rename>DATA</rename>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1056</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2003,16 +2190,16 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>768</xloc>
+      <xloc>656</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort rows 2</name>
+    <name>Sort rows 2 2</name>
     <type>SortRows</type>
     <description/>
-    <distribute>Y</distribute>
+    <distribute>N</distribute>
     <custom_distribution/>
     <copies>1</copies>
     <partitioning>
@@ -2027,14 +2214,6 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     <compress_variable/>
     <unique_rows>N</unique_rows>
     <fields>
-      <field>
-        <name>ANO</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
       <field>
         <name>DATA</name>
         <ascending>Y</ascending>
@@ -2054,7 +2233,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     </remotesteps>
     <GUI>
       <xloc>768</xloc>
-      <yloc>176</yloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2103,8 +2282,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>768</xloc>
-      <yloc>528</yloc>
+      <xloc>656</xloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2170,7 +2349,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     </remotesteps>
     <GUI>
       <xloc>1200</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2211,8 +2390,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>768</xloc>
-      <yloc>416</yloc>
+      <xloc>800</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2258,7 +2437,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     </remotesteps>
     <GUI>
       <xloc>672</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2304,7 +2483,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     </remotesteps>
     <GUI>
       <xloc>768</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2350,7 +2529,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     </remotesteps>
     <GUI>
       <xloc>864</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2392,7 +2571,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     </remotesteps>
     <GUI>
       <xloc>976</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2530,7 +2709,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1312</xloc>
+      <xloc>1200</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2602,8 +2781,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1312</xloc>
-      <yloc>176</yloc>
+      <xloc>1440</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2667,7 +2846,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     </remotesteps>
     <GUI>
       <xloc>1488</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2718,8 +2897,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1200</xloc>
-      <yloc>416</yloc>
+      <xloc>1232</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2778,8 +2957,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1536</xloc>
-      <yloc>528</yloc>
+      <xloc>1424</xloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2835,7 +3014,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1200</xloc>
+      <xloc>1088</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2892,8 +3071,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1200</xloc>
-      <yloc>176</yloc>
+      <xloc>1344</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2949,8 +3128,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1424</xloc>
-      <yloc>528</yloc>
+      <xloc>1312</xloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3007,7 +3186,7 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
     </remotesteps>
     <GUI>
       <xloc>1392</xloc>
-      <yloc>304</yloc>
+      <yloc>336</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3063,8 +3242,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1088</xloc>
-      <yloc>416</yloc>
+      <xloc>1120</xloc>
+      <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3102,43 +3281,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>864</xloc>
+      <xloc>752</xloc>
       <yloc>64</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Unique rows 2</name>
-    <type>Unique</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <count_rows>N</count_rows>
-    <count_field/>
-    <reject_duplicate_row>N</reject_duplicate_row>
-    <error_description/>
-    <fields>
-      <field>
-        <name>DATA</name>
-        <case_insensitive>N</case_insensitive>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>864</xloc>
-      <yloc>176</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3176,8 +3320,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>864</xloc>
-      <yloc>528</yloc>
+      <xloc>752</xloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3211,8 +3355,43 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>864</xloc>
-      <yloc>416</yloc>
+      <xloc>896</xloc>
+      <yloc>432</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Unique rows 5</name>
+    <type>Unique</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <count_rows>N</count_rows>
+    <count_field/>
+    <reject_duplicate_row>N</reject_duplicate_row>
+    <error_description/>
+    <fields>
+      <field>
+        <name>DATA</name>
+        <case_insensitive>N</case_insensitive>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -3313,8 +3492,8 @@ var LOCALIDADE_COMPLETA = MUNICIPIO + ", PE, BRASIL";
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1312</xloc>
-      <yloc>528</yloc>
+      <xloc>1200</xloc>
+      <yloc>544</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
