@@ -345,7 +345,7 @@
       <draw>Y</draw>
       <nr>0</nr>
       <xloc>272</xloc>
-      <yloc>112</yloc>
+      <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -383,8 +383,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>272</xloc>
-      <yloc>208</yloc>
+      <xloc>416</xloc>
+      <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -422,8 +422,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>272</xloc>
-      <yloc>304</yloc>
+      <xloc>544</xloc>
+      <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -461,8 +461,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>272</xloc>
-      <yloc>400</yloc>
+      <xloc>656</xloc>
+      <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
     <entry>
@@ -500,7 +500,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>416</xloc>
+      <xloc>768</xloc>
       <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
@@ -512,7 +512,7 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>528</xloc>
+      <xloc>880</xloc>
       <yloc>256</yloc>
       <attributes_kjc/>
     </entry>
@@ -558,42 +558,6 @@
   </entries>
   <hops>
     <hop>
-      <from>tr_carga_dim_localidade</from>
-      <to>tr_carga_fato.ktr</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
-    <hop>
-      <from>tr_carga_dim_ocorrencia</from>
-      <to>tr_carga_fato.ktr</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
-    <hop>
-      <from>tr_carga_dim_tempo</from>
-      <to>tr_carga_fato.ktr</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
-    <hop>
-      <from>tr_carga_dim_vitima</from>
-      <to>tr_carga_fato.ktr</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
-    <hop>
       <from>tr_carga_fato.ktr</from>
       <to>Success</to>
       <from_nr>0</from_nr>
@@ -621,7 +585,16 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>tr_leitura_dataset</from>
+      <from>tr_carga_dim_localidade</from>
+      <to>tr_carga_dim_ocorrencia</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>tr_carga_dim_ocorrencia</from>
       <to>tr_carga_dim_tempo</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -630,7 +603,7 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>tr_leitura_dataset</from>
+      <from>tr_carga_dim_tempo</from>
       <to>tr_carga_dim_vitima</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
@@ -639,8 +612,8 @@
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>tr_leitura_dataset</from>
-      <to>tr_carga_dim_ocorrencia</to>
+      <from>tr_carga_dim_vitima</from>
+      <to>tr_carga_fato.ktr</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
