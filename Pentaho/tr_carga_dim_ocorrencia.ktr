@@ -436,6 +436,25 @@
   </info>
   <notepads>
   </notepads>
+  <connection>
+    <name>MVI-SDS</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>MVI-SDS</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4fa4bff208cc2ff89</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+    </attributes>
+  </connection>
   <order>
     <hop>
       <from>Add sequence 5</from>
@@ -450,7 +469,7 @@
     <hop>
       <from>Text file output 5</from>
       <to>Table output 4</to>
-      <enabled>N</enabled>
+      <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Unique rows 4</from>
@@ -584,7 +603,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection/>
+    <connection>MVI-SDS</connection>
     <schema>public</schema>
     <table>dim_ocorrencia</table>
     <commit>1000</commit>

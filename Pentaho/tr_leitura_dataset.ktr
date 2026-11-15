@@ -459,12 +459,47 @@
     </hop>
     <hop>
       <from>Value mapper 2</from>
-      <to>Select values</to>
+      <to>Value mapper 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Select values</from>
       <to>Copy rows to result</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Generate rows</from>
+      <to>REST client</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>JSON input</from>
+      <to>Modified JavaScript value 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>REST client</from>
+      <to>JSON input</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Value mapper 3</from>
+      <to>Modified JavaScript value</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Modified JavaScript value</from>
+      <to>Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Modified JavaScript value 2</from>
+      <to>Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Stream lookup</from>
+      <to>Select values</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -523,7 +558,7 @@
         <currency>R$</currency>
         <decimal>,</decimal>
         <group>.</group>
-        <length>4</length>
+        <length>15</length>
         <precision>-1</precision>
         <trim_type>both</trim_type>
       </field>
@@ -617,7 +652,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>656</xloc>
+      <xloc>1024</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -643,25 +678,25 @@
     <fields>
       <field>
         <name>MUNICIPIO</name>
-        <value/>
+        <value>NÃO INFORMADO</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>REGIAO_GEOGRAFICA</name>
-        <value/>
+        <value>NÃO INFORMADO</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>SEXO</name>
-        <value/>
+        <value>DESCONHECIDO</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
       <field>
         <name>NATUREZA JURIDICA</name>
-        <value/>
+        <value>NÃO INFORMADO</value>
         <mask/>
         <set_empty_string>N</set_empty_string>
       </field>
@@ -717,47 +752,38 @@
     </partitioning>
     <fields>
       <field>
-        <name>MUNICIPIO</name>
-      </field>
-      <field>
         <name>REGIAO_GEOGRAFICA</name>
+        <rename/>
       </field>
       <field>
         <name>SEXO</name>
+        <rename/>
       </field>
       <field>
         <name>NATUREZA JURIDICA</name>
+        <rename/>
       </field>
       <field>
         <name>ANO</name>
+        <rename/>
       </field>
       <field>
         <name>IDADE</name>
+        <rename/>
       </field>
       <field>
         <name>TOTAL DE VITIMAS</name>
+        <rename/>
       </field>
       <field>
         <name>DATA</name>
+        <rename/>
+      </field>
+      <field>
+        <name>MUNICIPIO_ACENTUADO</name>
+        <rename>MUNICIPIO</rename>
       </field>
       <select_unspecified>N</select_unspecified>
-      <meta>
-        <name>MUNICIPIO</name>
-        <rename>MUNICIPIO</rename>
-        <type>String</type>
-        <length>-2</length>
-        <precision>-2</precision>
-        <conversion_mask/>
-        <date_format_lenient>false</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <lenient_string_to_number>false</lenient_string_to_number>
-        <encoding/>
-        <decimal_symbol/>
-        <grouping_symbol/>
-        <currency_symbol/>
-        <storage_type/>
-      </meta>
       <meta>
         <name>REGIAO_GEOGRAFICA</name>
         <rename>REGIAO_GEOGRAFICA</rename>
@@ -779,7 +805,7 @@
         <name>SEXO</name>
         <rename>SEXO</rename>
         <type>String</type>
-        <length>4</length>
+        <length>15</length>
         <precision>-2</precision>
         <conversion_mask/>
         <date_format_lenient>false</date_format_lenient>
@@ -887,7 +913,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>544</xloc>
+      <xloc>912</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -990,6 +1016,14 @@
         <source_value>DESC*</source_value>
         <target_value>DESCONHECIDO</target_value>
       </field>
+      <field>
+        <source_value>MASC</source_value>
+        <target_value>MASCULINO</target_value>
+      </field>
+      <field>
+        <source_value>FEM</source_value>
+        <target_value>FEMININO</target_value>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
@@ -1035,6 +1069,367 @@
     </remotesteps>
     <GUI>
       <xloc>448</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Value mapper 3</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>MUNICIPIO</field_to_use>
+    <target_field/>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>NAO INFORMADO</source_value>
+        <target_value>NÃO INFORMADO</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Generate rows</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>ibge_url</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>https://servicodados.ibge.gov.br/api/v1/localidades/estados/PE/municipios</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <limit>1</limit>
+    <never_ending>N</never_ending>
+    <interval_in_ms>5000</interval_in_ms>
+    <row_time_field>now</row_time_field>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>480</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>JSON input</name>
+    <type>JsonInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <addresultfile>N</addresultfile>
+    <readurl>N</readurl>
+    <removeSourceField>N</removeSourceField>
+    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
+    <doNotFailIfNoFile>Y</doNotFailIfNoFile>
+    <ignoreMissingPath>Y</ignoreMissingPath>
+    <defaultPathLeafToNull>Y</defaultPathLeafToNull>
+    <includeNulls>N</includeNulls>
+    <rownum_field/>
+    <file>
+      <name/>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>id_ibge</name>
+        <path>$[*].id</path>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>municipio_oficial</name>
+        <path>$[*].nome</path>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+    </fields>
+    <limit>0</limit>
+    <IsInFields>Y</IsInFields>
+    <IsAFile>N</IsAFile>
+    <valueField>result</valueField>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>704</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified JavaScript value 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>var str_original = new java.lang.String(municipio_oficial);
+var texto = java.text.Normalizer.normalize(str_original, java.text.Normalizer.Form.NFD);
+var chave_ibge = texto.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "").toUpperCase().trim();
+</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>chave_ibge</name>
+        <rename>chave_ibge</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>REST client</name>
+    <type>Rest</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <applicationType>TEXT PLAIN</applicationType>
+    <method>GET</method>
+    <url>https://servicodados.ibge.gov.br/api/v1/localidades/estados/PE/municipios</url>
+    <urlInField>Y</urlInField>
+    <dynamicMethod>N</dynamicMethod>
+    <methodFieldName/>
+    <urlField>ibge_url</urlField>
+    <bodyField/>
+    <httpLogin/>
+    <httpPassword>Encrypted </httpPassword>
+    <proxyHost/>
+    <proxyPort/>
+    <preemptive>N</preemptive>
+    <trustStoreFile/>
+    <trustStorePassword>Encrypted </trustStorePassword>
+    <headers>
+      </headers>
+    <parameters>
+      </parameters>
+    <matrixParameters>
+      </matrixParameters>
+    <result>
+      <name>result</name>
+      <code/>
+      <response_time/>
+      <response_header/>
+    </result>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified JavaScript value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>var str_original = new java.lang.String(MUNICIPIO);
+var texto = java.text.Normalizer.normalize(str_original, java.text.Normalizer.Form.NFD);
+var chave_base = texto.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "").toUpperCase().trim();
+
+if (chave_base == "IGUARACI") {
+    chave_base = "IGUARACY";
+} else if (chave_base == "BELEM DE SAO FRANCISCO"){
+	chave_base = "BELEM DO SAO FRANCISCO"
+} else if (chave_base == "SAO CAETANO"){
+	chave_base = "SAO CAITANO"
+} else if (chave_base == "LAGOA DO ITAENGA"){
+	chave_base = "LAGOA DE ITAENGA"
+} else if (chave_base == "ITAMARACA"){
+	chave_base = "ILHA DE ITAMARACA"
+}</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>chave_base</name>
+        <rename>chave_base</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Stream lookup</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <from>Modified JavaScript value 2</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>chave_base</name>
+        <field>chave_ibge</field>
+      </key>
+      <value>
+        <name>municipio_oficial</name>
+        <rename>MUNICIPIO_ACENTUADO</rename>
+        <default>NÃO INFORMADO</default>
+        <type>String</type>
+      </value>
+    </lookup>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
