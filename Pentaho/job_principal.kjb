@@ -611,14 +611,50 @@
       <description/>
       <type>SQL</type>
       <attributes/>
-      <sql>-- Limpa primeiro a fato para remover as dependências de Foreign Key
-TRUNCATE TABLE fato RESTART IDENTITY CASCADE;
+      <sql>-- 1. Criação das tabelas de dimensão (caso não existam)
+CREATE TABLE IF NOT EXISTS public.dim_localidade (
+    id_localidade INT PRIMARY KEY,
+    municipio VARCHAR(255),
+    regiao_geografica VARCHAR(255)
+);
 
--- Em seguida, limpa as tabelas de dimensão
-TRUNCATE TABLE dim_localidade RESTART IDENTITY CASCADE;
-TRUNCATE TABLE dim_vitima RESTART IDENTITY CASCADE;
-TRUNCATE TABLE dim_ocorrencia RESTART IDENTITY CASCADE;
-TRUNCATE TABLE dim_tempo RESTART IDENTITY CASCADE;</sql>
+CREATE TABLE IF NOT EXISTS public.dim_ocorrencia (
+    id_ocorrencia INT PRIMARY KEY,
+    natureza_juridica VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS public.dim_tempo (
+    id_tempo INT PRIMARY KEY,
+    data DATE,
+    ano INT,
+    dia_mes INT,
+    mes INT,
+    dia_semana INT,
+    trimestre INT
+);
+
+CREATE TABLE IF NOT EXISTS public.dim_vitima (
+    id_vitima INT PRIMARY KEY,
+    sexo VARCHAR(50),
+    idade VARCHAR(50),
+    faixa_etaria VARCHAR(100)
+);
+
+-- 2. Criação da tabela fato (caso não exista)
+CREATE TABLE IF NOT EXISTS public.fato (
+    id_localidade INT REFERENCES public.dim_localidade(id_localidade),
+    id_tempo INT REFERENCES public.dim_tempo(id_tempo),
+    id_ocorrencia INT REFERENCES public.dim_ocorrencia(id_ocorrencia),
+    id_vitima INT REFERENCES public.dim_vitima(id_vitima),
+    total_vitimas INT
+);
+
+-- 3. Limpeza das tabelas para reexecução do ETL
+TRUNCATE TABLE public.fato RESTART IDENTITY CASCADE;
+TRUNCATE TABLE public.dim_localidade RESTART IDENTITY CASCADE;
+TRUNCATE TABLE public.dim_vitima RESTART IDENTITY CASCADE;
+TRUNCATE TABLE public.dim_ocorrencia RESTART IDENTITY CASCADE;
+TRUNCATE TABLE public.dim_tempo RESTART IDENTITY CASCADE;</sql>
       <useVariableSubstitution>F</useVariableSubstitution>
       <sqlfromfile>F</sqlfromfile>
       <sqlfilename/>

@@ -477,13 +477,8 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Formula</from>
-      <to>Add sequence</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Unique rows</from>
-      <to>Formula</to>
+      <to>Add sequence</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -517,7 +512,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
+      <xloc>336</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -550,8 +545,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>416</xloc>
-      <yloc>64</yloc>
+      <xloc>336</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -590,46 +585,6 @@
     </remotesteps>
     <GUI>
       <xloc>64</xloc>
-      <yloc>64</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>MUNICIPIO_ACENTUADO</name>
-        <rename>MUNICIPIO</rename>
-      </field>
-      <field>
-        <name>REGIAO_GEOGRAFICA</name>
-        <rename/>
-      </field>
-      <field>
-        <name>chave_base</name>
-        <rename>CHAVE_BASE</rename>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>336</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -722,10 +677,6 @@
         <stream_name>REGIAO_GEOGRAFICA</stream_name>
       </field>
       <field>
-        <column_name>localidade_completa</column_name>
-        <stream_name>LOCALIDADE_COMPLETA</stream_name>
-      </field>
-      <field>
         <column_name>id_localidade</column_name>
         <stream_name>ID_LOCALIDADE</stream_name>
       </field>
@@ -739,7 +690,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>688</xloc>
+      <xloc>528</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
@@ -811,18 +762,6 @@
         <precision>-1</precision>
       </field>
       <field>
-        <name>LOCALIDADE_COMPLETA</name>
-        <type>String</type>
-        <format/>
-        <currency/>
-        <decimal/>
-        <group/>
-        <nullif/>
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
-      <field>
         <name>ID_LOCALIDADE</name>
         <type>Integer</type>
         <format>####0;-####0</format>
@@ -844,7 +783,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>592</xloc>
+      <xloc>432</xloc>
       <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>

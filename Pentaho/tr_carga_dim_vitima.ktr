@@ -489,23 +489,23 @@
   </connection>
   <order>
     <hop>
-      <from>Add sequence 3</from>
-      <to>Value mapper 3</to>
+      <from>Add ID</from>
+      <to>Formatar Idade</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Number range</from>
-      <to>Select values 2</to>
+      <from>Faixa Etária</from>
+      <to>Select values</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Select values 2</from>
-      <to>Add sequence 3</to>
+      <from>Select values</from>
+      <to>Add ID</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 3</from>
-      <to>Unique rows 3</to>
+      <from>Ordenar</from>
+      <to>Unique rows</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -514,23 +514,23 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Unique rows 3</from>
-      <to>Number range</to>
+      <from>Unique rows</from>
+      <to>Faixa Etária</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Value mapper 3</from>
+      <from>Formatar Idade</from>
       <to>Text file output 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Get rows from result</from>
-      <to>Sort rows 3</to>
+      <to>Ordenar</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>Add sequence 3</name>
+    <name>Add ID</name>
     <type>Sequence</type>
     <description/>
     <distribute>N</distribute>
@@ -542,7 +542,7 @@
     </partitioning>
     <valuename>ID_VITIMA</valuename>
     <use_database>N</use_database>
-    <connection/>
+    <connection>MVI-SDS</connection>
     <schema/>
     <seqname>SEQ_</seqname>
     <use_counter>Y</use_counter>
@@ -604,7 +604,7 @@
     </GUI>
   </step>
   <step>
-    <name>Number range</name>
+    <name>Faixa Etária</name>
     <type>NumberRange</type>
     <description/>
     <distribute>Y</distribute>
@@ -654,7 +654,7 @@
     </GUI>
   </step>
   <step>
-    <name>Select values 2</name>
+    <name>Select values</name>
     <type>SelectValues</type>
     <description/>
     <distribute>N</distribute>
@@ -667,12 +667,15 @@
     <fields>
       <field>
         <name>SEXO</name>
+        <rename/>
       </field>
       <field>
         <name>IDADE</name>
+        <rename/>
       </field>
       <field>
         <name>FAIXA_ETARIA</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
@@ -708,7 +711,7 @@
     </GUI>
   </step>
   <step>
-    <name>Sort rows 3</name>
+    <name>Ordenar</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -923,7 +926,7 @@
     </GUI>
   </step>
   <step>
-    <name>Unique rows 3</name>
+    <name>Unique rows</name>
     <type>Unique</type>
     <description/>
     <distribute>Y</distribute>
@@ -962,7 +965,7 @@
     </GUI>
   </step>
   <step>
-    <name>Value mapper 3</name>
+    <name>Formatar Idade</name>
     <type>ValueMapper</type>
     <description/>
     <distribute>Y</distribute>

@@ -457,13 +457,13 @@
   </connection>
   <order>
     <hop>
-      <from>Add sequence 5</from>
+      <from>Add ID</from>
       <to>Text file output 5</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 5</from>
-      <to>Unique rows 4</to>
+      <from>Ordenar</from>
+      <to>Unique rows</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
@@ -472,18 +472,18 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Unique rows 4</from>
-      <to>Add sequence 5</to>
+      <from>Unique rows</from>
+      <to>Add ID</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Get rows from result</from>
-      <to>Sort rows 5</to>
+      <to>Ordenar</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>Add sequence 5</name>
+    <name>Add ID</name>
     <type>Sequence</type>
     <description/>
     <distribute>N</distribute>
@@ -495,7 +495,7 @@
     </partitioning>
     <valuename>ID_OCORRENCIA</valuename>
     <use_database>N</use_database>
-    <connection/>
+    <connection>MVI-SDS</connection>
     <schema/>
     <seqname>SEQ_</seqname>
     <use_counter>Y</use_counter>
@@ -551,7 +551,7 @@
     </GUI>
   </step>
   <step>
-    <name>Sort rows 5</name>
+    <name>Ordenar</name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -726,7 +726,7 @@
     </GUI>
   </step>
   <step>
-    <name>Unique rows 4</name>
+    <name>Unique rows</name>
     <type>Unique</type>
     <description/>
     <distribute>Y</distribute>
