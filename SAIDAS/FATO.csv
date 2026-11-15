@@ -1,4 +1,4 @@
-ID_LOCALIDADE;ID_TEMPO;ID_OCORRENCIA;ID_VITIMA;TOTAL_VITIMAS
+id_localidade;id_tempo;id_ocorrencia;id_vitima;TOTAL_VITIMAS
 1;10;3;151;1
 1;16;3;131;1
 1;18;3;136;1
